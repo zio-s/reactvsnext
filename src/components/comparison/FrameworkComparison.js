@@ -1,5 +1,4 @@
 'use client';
-
 import { useState } from 'react';
 import { frameworks } from '@/data/comparison/frameworks';
 import FeatureTable from './FeatureTable';
