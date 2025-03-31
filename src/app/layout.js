@@ -1,5 +1,5 @@
 import './globals.css';
-
+import Link from 'next/link';
 export const metadata = {
   title: 'React vs Next.js',
   description: 'React와 Next.js의 차이점 학습 및 비교 플랫폼',
@@ -11,25 +11,25 @@ export default function RootLayout({ children }) {
       <body>
         <header className='border-b'>
           <div className='container mx-auto px-4 py-4 flex justify-between items-center'>
-            <a href='/' className='text-xl font-bold'>
+            <Link href='/' className='text-xl font-bold'>
               React<span className='text-blue-600'>Vs</span>Next
-            </a>
+            </Link>
             <nav>
               <ul className='flex space-x-6'>
                 <li>
-                  <a href='/comparison' className='hover:text-blue-600'>
+                  <Link href='/comparison' className='hover:text-blue-600'>
                     비교
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href='/learning' className='hover:text-blue-600'>
+                  <Link href='/learning' className='hover:text-blue-600'>
                     학습
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href='/quiz' className='hover:text-blue-600'>
+                  <Link href='/quiz' className='hover:text-blue-600'>
                     퀴즈
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </nav>
