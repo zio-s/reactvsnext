@@ -30,7 +30,7 @@ export default function QuizContent({ quizData }) {
             <button
               key={index}
               onClick={() => handleOptionClick(index)}
-              className={`w-full text-left px-4 py-3 rounded-xl border transition
+              className={`w-full text-left px-4 py-3 rounded-xl border transition cursor-pointer
                 ${
                   showAnswer
                     ? index === current.answer
