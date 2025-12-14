@@ -70,16 +70,36 @@ export default function HomePage() {
       {/* 최근 업데이트 섹션 */}
       <section>
         <h2 className='text-2xl font-bold mb-4 text-gray-900'>최근 업데이트</h2>
-        <div className='border rounded-lg overflow-hidden'>
-          <div className='bg-gray-50 px-4 py-2 border-b'>
-            <span className='text-sm font-medium text-gray-700'>2025년 3월 31일</span>
+        <div className='space-y-4'>
+          {/* 최신 업데이트 */}
+          <div className='border rounded-lg overflow-hidden'>
+            <div className='bg-blue-50 px-4 py-2 border-b'>
+              <span className='text-sm font-medium text-blue-700'>2025년 12월 14일</span>
+              <span className='ml-2 text-xs bg-blue-100 text-blue-700 px-2 py-0.5 rounded'>NEW</span>
+            </div>
+            <div className='p-4 bg-white'>
+              <h3 className='font-medium mb-2 text-gray-900'>대규모 콘텐츠 업데이트</h3>
+              <ul className='text-gray-600 space-y-1 text-sm'>
+                <li>• Next.js 학습 콘텐츠 7개 카테고리 추가 (라우팅, API, 배포, 데이터 페칭 등)</li>
+                <li>• React 스타일링 섹션 8개 토픽 추가 (CSS Modules, Tailwind, Styled Components 등)</li>
+                <li>• 퀴즈 기능 강화 (난이도 시스템, 필터, 히스토리, 공유 기능)</li>
+                <li>• Next.js 15.5.9 업데이트 (보안 패치)</li>
+              </ul>
+            </div>
           </div>
-          <div className='p-4 bg-white'>
-            <h3 className='font-medium mb-2 text-gray-900'>프로젝트 출시</h3>
-            <p className='text-gray-600'>
-              React vs Next.js 비교 프로젝트가 시작되었습니다. 기본적인 비교 섹션이 완성되었으며, 앞으로 더 많은
-              콘텐츠가 추가될 예정입니다.
-            </p>
+
+          {/* 이전 업데이트 */}
+          <div className='border rounded-lg overflow-hidden'>
+            <div className='bg-gray-50 px-4 py-2 border-b'>
+              <span className='text-sm font-medium text-gray-700'>2025년 3월 31일</span>
+            </div>
+            <div className='p-4 bg-white'>
+              <h3 className='font-medium mb-2 text-gray-900'>프로젝트 출시</h3>
+              <p className='text-gray-600'>
+                React vs Next.js 비교 프로젝트가 시작되었습니다. 기본적인 비교 섹션이 완성되었으며, 앞으로 더 많은
+                콘텐츠가 추가될 예정입니다.
+              </p>
+            </div>
           </div>
         </div>
       </section>
